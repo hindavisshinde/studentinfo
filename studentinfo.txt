@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Information</h1>
+        <form id="student-form">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+            <br>
+            <label for="middle-name">Middle Name:</label>
+            <input type="text" id="middle-name" name="middle-name">
+            <br>
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required>
+            <br>
+            <label for="mother-name">Mother's Name:</label>
+            <input type="text" id="mother-name" name="mother-name" required>
+            <br>
+            <label for="percentages">Percentages:</label>
+            <input type="number" id="percentages" name="percentages" min="0" max="100" required>
+            <br>
+            <label for="school-name">School Name:</label>
+            <input type="text" id="school-name" name="school-name" required>
+            <br>
+            <label for="college-name">College Name:</label>
+            <input type="text" id="college-name" name="college-name" required>
+            <br>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="0" required>
+            <br>
+            <label for="email-address">Email Address:</label>
+            <input type="email" id="email-address" name="email-address" required>
+            <br>
+            <label for="mobile-number">Mobile Number:</label>
+            <input type="tel" id="mobile-number" name="mobile-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <br>
+            <label for="current-address">Current Address:</label>
+            <textarea id="current-address" name="current-address" required></textarea>
+            <br>
+            <label for="permanent-address">Permanent Address:</label>
+            <textarea id="permanent-address" name="permanent-address" required></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
